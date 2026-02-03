@@ -6,50 +6,69 @@
   <title>Novus Brother Pvt Ltd - Authorized Royal Enfield Service Center</title>
   <style>
     body { margin:0; font-family: Arial, sans-serif; background:#0a1f44; color:#fff; }
-    .hero { background:#0a1f44; text-align:center; padding:50px 20px; } /* Slightly more padding for logo emphasis */
-    .logo { width:180px; height:auto; margin-bottom:20px; } /* Larger for the classic emblem */
-    h1 { font-size:2.8em; margin:10px 0; }
-    .phone { font-size:1.8em; margin:15px 0; color:#fff; }
-    .btn { display:inline-block; padding:15px 30px; margin:10px; border-radius:50px; text-decoration:none; font-size:1.2em; font-weight:bold; }
+    .hero { 
+      background: linear-gradient(rgba(10, 31, 68, 0.7), rgba(10, 31, 68, 0.7)), 
+                  url('https://imgbin.com/png/WXqqBCid/royal-enfield-bullet-quotclassicquot-500-royal-enfield-classic-motorcycle-png') center/cover no-repeat; 
+      text-align:center; 
+      padding:80px 20px; /* More space for bigger hero feel */
+      min-height: 60vh; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+    }
+    .hero-content { max-width: 900px; margin: 0 auto; background: rgba(0,0,0,0.4); padding: 30px; border-radius: 15px; }
+    .logo { width:180px; height:auto; margin-bottom:20px; }
+    h1 { font-size:3em; margin:10px 0; text-shadow: 2px 2px 8px #000; }
+    .phone { font-size:2em; margin:20px 0; color:#fff; text-shadow: 1px 1px 5px #000; }
+    .btn { display:inline-block; padding:18px 40px; margin:15px; border-radius:50px; text-decoration:none; font-size:1.3em; font-weight:bold; }
     .book-btn { background:#007bff; color:#fff; }
     .call-btn { background:#dc3545; color:#fff; }
-    .section { padding:40px 20px; max-width:1100px; margin:auto; text-align:center; }
-    .features { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
-    .feature-card { background:#1a3a6e; padding:30px; border-radius:15px; width:300px; box-shadow:0 4px 10px rgba(0,0,0,0.5); }
-    .icon { font-size:60px; margin-bottom:15px; }
+    .section { padding:50px 20px; max-width:1100px; margin:auto; text-align:center; }
+    .features { display:flex; flex-wrap:wrap; justify-content:center; gap:25px; }
+    .feature-card { background:#1a3a6e; padding:35px; border-radius:15px; width:320px; box-shadow:0 6px 15px rgba(0,0,0,0.6); }
+    .icon { font-size:70px; margin-bottom:20px; }
     .testimonials { background:#0d2552; }
-    .quote { background:#1a3a6e; padding:25px; margin:20px auto; max-width:700px; border-radius:10px; font-style:italic; }
-    .stars { color:#ffd700; font-size:1.8em; margin:10px 0; }
-    form { max-width:600px; margin:30px auto; }
-    input, select, textarea { width:100%; padding:12px; margin:10px 0; border-radius:8px; border:none; font-size:1em; }
-    .submit-btn { background:#25D366; color:white; padding:15px 30px; border:none; border-radius:50px; font-size:1.2em; cursor:pointer; }
-    .contact-info { background:#000; }
-    footer { background:#000; text-align:center; padding:20px; font-size:0.9em; }
-    .floating-contact { position:fixed; bottom:20px; right:20px; z-index:1000; }
-    .fab { background:#25D366; color:white; width:65px; height:65px; border-radius:50%; text-align:center; line-height:65px; font-size:35px; cursor:pointer; box-shadow:0 4px 15px rgba(0,0,0,0.6); }
-    .popup-panel { display:none; background:#fff; color:#000; padding:20px; border-radius:15px; position:absolute; bottom:80px; right:0; width:280px; box-shadow:0 5px 20px rgba(0,0,0,0.5); }
+    .quote { background:#1a3a6e; padding:30px; margin:25px auto; max-width:750px; border-radius:12px; font-style:italic; font-size:1.1em; }
+    .stars { color:#ffd700; font-size:2em; margin:15px 0; }
+    form { max-width:650px; margin:40px auto; background:#1a3a6e; padding:30px; border-radius:12px; }
+    input, select, textarea { width:100%; padding:14px; margin:12px 0; border-radius:8px; border:none; font-size:1.1em; }
+    .submit-btn { background:#25D366; color:white; padding:18px 40px; border:none; border-radius:50px; font-size:1.3em; cursor:pointer; width:100%; max-width:400px; }
+    .contact-info { background:#000; padding:50px 20px; }
+    footer { background:#000; text-align:center; padding:25px; font-size:1em; }
+    .floating-contact { position:fixed; bottom:25px; right:25px; z-index:1000; }
+    .fab { background:#25D366; color:white; width:70px; height:70px; border-radius:50%; text-align:center; line-height:70px; font-size:38px; cursor:pointer; box-shadow:0 6px 20px rgba(0,0,0,0.7); }
+    .popup-panel { display:none; background:#fff; color:#000; padding:25px; border-radius:15px; position:absolute; bottom:90px; right:0; width:300px; box-shadow:0 8px 25px rgba(0,0,0,0.6); }
     .popup-panel.show { display:block; }
-    .popup-btn { display:block; background:#eee; padding:15px; margin:10px 0; text-align:center; text-decoration:none; border-radius:10px; font-weight:bold; }
+    .popup-btn { display:block; background:#eee; padding:18px; margin:12px 0; text-align:center; text-decoration:none; border-radius:12px; font-weight:bold; font-size:1.1em; }
     .call { background:#007bff; color:white; }
     .whatsapp { background:#25D366; color:white; }
+
+    @media (max-width: 768px) {
+      .hero { padding:60px 15px; min-height: 50vh; }
+      h1 { font-size:2.2em; }
+      .phone { font-size:1.6em; }
+      .btn { padding:15px 30px; font-size:1.1em; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Hero Section with Updated Bullet Logo -->
+  <!-- Hero Section with Bullet Bike Background -->
   <div class="hero">
-    <img src="https://www.clipartmax.com/png/middle/207-2070301_logo-royal-enfield-png-enfield-cycle-co-ltd.png" alt="Royal Enfield Bullet Logo - Classic Winged Emblem" class="logo">
-    <h1>Novus Brother Pvt Ltd</h1>
-    <p style="font-size:1.4em; margin:10px 0;">Authorized Royal Enfield Service Center</p>
-    <div class="phone">📞 9829232303</div>
-    <a href="#booking" class="btn book-btn">Book Service Now</a>
-    <a href="tel:+9779829232303" class="btn call-btn">Call Us</a>
+    <div class="hero-content">
+      <img src="https://www.clipartmax.com/png/middle/207-2070301_logo-royal-enfield-png-enfield-cycle-co-ltd.png" alt="Royal Enfield Bullet Logo - Classic Winged Emblem" class="logo">
+      <h1>Novus Brother Pvt Ltd</h1>
+      <p style="font-size:1.6em; margin:15px 0;">Authorized Royal Enfield Service Center</p>
+      <div class="phone">📞 9829232303</div>
+      <a href="#booking" class="btn book-btn">Book Service Now</a>
+      <a href="tel:+9779829232303" class="btn call-btn">Call Us</a>
+    </div>
   </div>
 
   <!-- Features -->
   <div class="section">
     <h2>Expert Royal Enfield Service You Can Trust</h2>
-    <p style="font-size:1.2em; margin-bottom:30px;">Authorized Service Center with Certified Technicians and Genuine Royal Enfield Parts</p>
+    <p style="font-size:1.3em; margin-bottom:40px;">Authorized Service Center with Certified Technicians and Genuine Royal Enfield Parts</p>
     <div class="features">
       <div class="feature-card">
         <div class="icon">🛡️</div>
@@ -105,7 +124,7 @@
         <option value="Interceptor">Interceptor</option>
       </select>
       <input type="date" id="serviceDate" placeholder="Preferred Service Date (Optional)">
-      <textarea id="notes" rows="4" placeholder="Any specific concerns or requirements? (Optional)"></textarea>
+      <textarea id="notes" rows="5" placeholder="Any specific concerns or requirements? (Optional)"></textarea>
       <button type="button" class="submit-btn" onclick="sendToWhatsApp()">Book via WhatsApp</button>
     </form>
   </div>
@@ -128,7 +147,7 @@
   <div class="floating-contact">
     <div class="fab" onclick="togglePopup()">📞</div>
     <div class="popup-panel" id="contactPopup">
-      <span style="float:right; cursor:pointer; font-size:30px;" onclick="togglePopup()">×</span>
+      <span style="float:right; cursor:pointer; font-size:32px;" onclick="togglePopup()">×</span>
       <a href="tel:+9779829232303" class="popup-btn call">📞 Call Us Now</a>
       <a href="https://wa.me/9779829232303?text=Hello%20Novus%20Brother%20Pvt%20Ltd%2C%20I%20need%20Royal%20Enfield%20service%20help" target="_blank" class="popup-btn whatsapp">💬 Chat on WhatsApp</a>
     </div>
